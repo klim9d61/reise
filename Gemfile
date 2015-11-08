@@ -23,7 +23,21 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'haml', '~> 4.0'
+
+# Added Gems
+
+# Haml-rails provides Haml generators for Rails 4
+gem 'haml-rails', '~> 0.9.0'
+# Flexible authentication solution for Rails
+gem 'devise'
+# Pagination library for Rails, Sinatra, Merb, DataMapper, and more
+gem 'will_paginate', '~> 3.0.6'
+# Official Sass port of Bootstrap 2 and 3
+gem 'bootstrap-sass', '~> 3.3'
+# Autoprefixer for Ruby and Ruby on Rails
+gem 'autoprefixer-rails', '~> 6.0'
+
+
 
     # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -38,6 +52,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
+  gem 'pry-rails', '~> 0.3.4'
 end
 
 group :development do
