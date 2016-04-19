@@ -9,8 +9,6 @@ gem 'mysql2', '~> 0.3.20'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -36,7 +34,8 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'bootstrap-sass', '~> 3.3'
 # Autoprefixer for Ruby and Ruby on Rails
 gem 'autoprefixer-rails', '~> 6.0'
-
+# Puma is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications.
+gem 'puma', '~> 3.4'
 
 
     # Use ActiveModel has_secure_password
@@ -53,6 +52,9 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
   gem 'pry-rails', '~> 0.3.4'
+  gem 'better_errors', '~> 2.1'
+  # help to kill N+1 queries and unused eager loading
+  gem 'bullet', '~> 5.0'
 end
 
 group :development do
