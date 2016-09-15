@@ -34,6 +34,8 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'autoprefixer-rails', '~> 6.0'
 # Puma is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications.
 gem 'puma', '~> 3.4'
+# The administration framework for Ruby on Rails.
+gem 'activeadmin', '~> 1.0.0.pre4'
 
 
     # Use ActiveModel has_secure_password
@@ -55,6 +57,8 @@ group :development, :test do
   gem 'better_errors', '~> 2.1'
   # help to kill N+1 queries and unused eager loading
   gem 'bullet', '~> 5.0'
+  # Faker, a port of Data::Faker from Perl, is used to easily generate fake data: names, addresses, phone numbers, etc.
+  gem 'faker', '~> 1.6'
 end
 
 group :development do
